@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --clr-gold: #DCC48E;
+    --clr-beige: #EAEFD3;
+    --clr-purple: #27233A;
+    --clr-dark-purple: #1D1321;
+}
+
+body {
+    background-color: var(--clr-purple);
+    color: var(--clr-beige);
+}
+
+#auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    min-height: 100vh; 
+    background-image: url("img/fondo.png");
+    color: var(--clr-beige);
+}
+
+#login-form, #register-form {
+    background-color: crimson;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--clr-purple);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--clr-purple);
+    color: var(--clr-beige);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+}
+
+a {
+    color: var(--clr-gold);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#game-container {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-gold);
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--clr-beige);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arma:hover {
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-purple);
+    background-color: var(--clr-gold);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+}
+
+.disabled {
+    display: none;
+}
+
+
+#reiniciar {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 150px;
+}
+
+
+#logout-btn {
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#logout-btn:hover {
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+}
